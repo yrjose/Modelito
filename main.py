@@ -12,6 +12,7 @@ b = st.slider("Coeficiente b (x²)", -10.0, 10.0, 0.0)
 c = st.slider("Coeficiente c (x)", -10.0, 10.0, 0.0)
 d = st.slider("Coeficiente d (termo independente)", -10.0, 10.0, 0.0)
 
+#comentario massa 17:10 05/09/25
 # Intervalo de x
 x = np.linspace(-10, 10, 400)
 y = a*x**3 + b*x**2 + c*x + d
@@ -29,3 +30,5 @@ ax.legend()
 
 # Mostra gráfico no app
 st.pyplot(fig)
+
+#streamlit run app.py
